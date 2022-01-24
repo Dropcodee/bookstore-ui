@@ -46,7 +46,7 @@ export default defineComponent({
     const store = useStore();
     const visible = ref(false);
     const books = computed(() => {
-      const booksFiltered = store.getters['books/GetLatestBooks'];
+      const booksFiltered = store.getters['books/GetCategoryBooks'];
       booksFiltered.forEach((book) => {
         // eslint-disable-next-line no-param-reassign
         book.publishedDate = DateFormatter(book.publishedDate);
