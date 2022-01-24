@@ -13,7 +13,7 @@
   height: 1.5em;
 }
 .opacity-50 {
-  opacity: 50%;
+  opacity: 0.5;
 }
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
   background-color: #f2fbff;
