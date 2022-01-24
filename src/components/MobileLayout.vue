@@ -62,7 +62,8 @@
                   ></path>
                 </svg>
               </span>
-              <p class="smallnav__total">Showing 18 Result(s)</p>
+              <p class="smallnav__total">Showing
+                {{ currentCategory.books.length || 0 }} Result(s)</p>
             </div>
           </a-col>
         </a-row>
@@ -99,7 +100,8 @@
               >{{ category.initials }}</span
             >
             {{ category.name }}
-            <span class="opacity-50" :style="{ margin: '0 2em' }">340</span>
+            <span class="opacity-50" :style="{ margin: '0 2em' }">
+              {{ category.books.length || 0 }}</span>
           </a-menu-item>
         </a-menu>
       </a-layout-sider>
